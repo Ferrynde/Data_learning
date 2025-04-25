@@ -6,6 +6,7 @@ print(df.info())
 print(df.describe())
 
 print(df.isnull().sum())
+
 colonnes_numeriques = df.select_dtypes(include=['float64', 'int64']).columns.tolist()
 print(colonnes_numeriques)
 # Suppression des colonnes contenant plus de 30% de valeurs manquantes
